@@ -6,20 +6,24 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import grafana from "./tech/grafana.png";
 
 import css from "./tech/java.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/python.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
-import javascript from "./tech/nifi.png";
+import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/grafana.png";
+import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/firebase.png";
 import redux from "./tech/numpy.png";
 import tailwind from "./tech/rpi.png";
 import typescript from "./tech/kotlin.png";
 import threejs from "./tech/tensorflow.png";
+import nifi from "./tech/nifi.png";
+import numpy from "./tech/numpy.png";
+import python from "./tech/python.png";
 
 import meta from "./company/brit.png";
 import shopify from "./company/vesit.png";
@@ -59,4 +63,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  grafana,
+  nifi,
+  numpy,
+  python,
 };

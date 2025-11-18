@@ -1,3 +1,122 @@
+// import {
+//   mobile,
+//   backend,
+//   creator,
+//   web,
+//   javascript,
+//   typescript,
+//   html,
+//   css,
+//   reactjs,
+//   redux,
+//   tailwind,
+//   nodejs,
+//   mongodb,
+//   git,
+//   figma,
+//   docker,
+//   meta,
+//   accenture,
+//   tesla,
+//   shopify,
+//   carrent,
+//   jobit,
+//   tripguide,
+//   threejs,
+// } from "../assets";
+
+// export const navLinks = [
+//   {
+//     id: "about",
+//     title: "About",
+//   },
+//   {
+//     id: "work",
+//     title: "Work",
+//   },
+//   {
+//     id: "contact",
+//     title: "Contact",
+//   },
+
+// ];
+
+// const services = [
+//   {
+//     title: "Software Developer",
+//     icon: web,
+//   },
+//   {
+//     title: "Machine Learning",
+//     icon: mobile,
+//   },
+//   {
+//     title: "Visionary",
+//     icon: creator,
+//   },
+//   {
+//     title: "Leader",
+//     icon: backend,
+//   },
+  
+// ];
+
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: html,
+//   },
+//   {
+//     name: "CSS 3",
+//     icon: css,
+//   },
+//   {
+//     name: "JavaScript",
+//     icon: javascript,
+//   },
+//   {
+//     name: "TypeScript",
+//     icon: typescript,
+//   },
+//   {
+//     name: "React JS",
+//     icon: reactjs,
+//   },
+//   {
+//     name: "Redux Toolkit",
+//     icon: redux,
+//   },
+//   {
+//     name: "Tailwind CSS",
+//     icon: tailwind,
+//   },
+//   {
+//     name: "Node JS",
+//     icon: nodejs,
+//   },
+//   {
+//     name: "MongoDB",
+//     icon: mongodb,
+//   },
+//   {
+//     name: "Three JS",
+//     icon: threejs,
+//   },
+//   {
+//     name: "git",
+//     icon: git,
+//   },
+//   {
+//     name: "figma",
+//     icon: figma,
+//   },
+//   {
+//     name: "docker",
+//     icon: docker,
+//   },
+// ];
+
+// src/constants/index.js
 import {
   mobile,
   backend,
@@ -23,45 +142,106 @@ import {
   jobit,
   tripguide,
   threejs,
+  nifi,
+  numpy,
+  python,
+  grafana,
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "home",
+    title: "Home",
+    path: "/",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "about",
+    title: "About",
+    path: "/about",
+  },
+  {
+    id: "experience",
+    title: "Experience",
+    path: "/experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+    path: "/projects",
   },
   {
     id: "contact",
     title: "Contact",
+    path: "/contact",
   },
-
 ];
 
+// Reframed as Data / Analytics focused services
 const services = [
   {
-    title: "Software Developer",
+    title: "Data Analyst",
     icon: web,
   },
   {
-    title: "Machine Learning",
+    title: "Machine Learning Engineer",
     icon: mobile,
   },
   {
-    title: "Visionary",
+    title: "Data Visualization & BI",
     icon: creator,
   },
   {
-    title: "Leader",
+    title: "Data Engineering Foundations",
     icon: backend,
   },
-  
 ];
 
+// Re-ordered / tweaked to highlight data stack
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "NumPy",
+    icon: numpy,
+  },
+  {
+    name: "TensorFlow",
+    icon: threejs, // if you prefer, keep tensorflow icon here instead
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Apache NiFi",
+    icon: nifi,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "Grafana",
+    icon: grafana,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -71,115 +251,79 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
+
 const experiences = [
   {
-    title: "Software Engineer",
+    title: "Data Analyst / Software Engineer",
     company_name: "Accenture",
     icon: accenture,
     iconBg: "#ffffff",
     date: "August 2021 - August 2023",
     points: [
-      "Orchestrated the integration of various components using Apache NIFI and ConText, enhancing data flow efficiency.",
-      "Managed the implementation of a robust CI/CD pipeline using GitLab, resulting in streamlined development and deployment processes.",
-      "Established a sophisticated monitoring system using Monit and Grafana's Dashboard, coupled with Telegraf for efficient metric collection.",
-      "Led code review efforts for each module within the Client Statements system, ensuring process compliance and high-quality deliverables",
-      "Collaborated with cross-functional teams to align technical strategies with business goals, fostering a cohesive work environment.",
-      "Mentored junior developers, providing technical guidance, and fostering skill development.",
+      "Analyzed large-scale financial data across 22+ enterprise applications supporting APAC & EMEA regulatory reporting.",
+      "Designed automated ETL workflows using Apache NiFi, improving data pipeline efficiency and reducing manual intervention by 30%.",
+      "Performed root-cause analysis on data quality issues, improving accuracy of client statements and compliance outputs.",
+      "Built monitoring dashboards using Grafana and Telegraf to track 200+ data pipeline metrics, enabling faster incident resolution.",
+      "Collaborated with cross-functional teams to translate business requirements into analytics tasks and reporting enhancements.",
+      "Mentored junior team members on SQL debugging, data validation techniques, and pipeline best practices."
     ],
   },
   {
-    title: "Associate Application Developer",
+    title: "Junior Data Analyst",
     company_name: "Accenture",
     icon: accenture,
     iconBg: "#ffffff",
     date: "Aug 2021 - Oct 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in developing internal reporting tools using React.js and Python to automate data validation and QA checks.",
+      "Worked with designers and product managers to improve usability of analytics dashboards.",
+      "Implemented performance fixes and optimized queries to enhance data retrieval processes.",
+      "Contributed to code reviews and identified improvements in analytics scripts and data handling functions."
     ],
   },
   {
-    title: "Research Intern",
-    company_name: "Bhaba Atomic Research Center",
+    title: "Data Research Intern",
+    company_name: "Bhabha Atomic Research Centre (BARC)",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Nov 2019 - Jan 2020",
     points: [
-      "Demonstrated business-focused UI skills, creating an impactful Human Machine Interface (HMI) prototype in Reactor Control Division",
-      " Utilized Python, Matplotlib, & Tkinter", 
-      "led a team of 4 and liaised between the mentor and team",
-      "Played a pivotal role in risk analysis & risk mitigation leading to an integrated alert system within the HMI ",
-      ],
+      "Performed analytical research for reactor control systems, using Python and Matplotlib to visualize safety patterns.",
+      "Led a team of 4 to build an HMI prototype for the Reactor Control Division, improving data clarity for critical decision-making.",
+      "Conducted risk assessment and anomaly analysis, contributing to an automated real-time alert system.",
+    ],
   },
   {
-    title: "Summer Intern",
-    company_name: "VESIT- Mumbai University",
+    title: "Research Intern",
+    company_name: "VESIT – Mumbai University",
     icon: shopify,
     iconBg: "#ffffff",
     date: "May 2018 - July 2019",
     points: [
-      "Modifications to a ARM Microcontroller based Humnoid Robot to enhance its efficiency in real life scenarios",
-      "Applied knowledge of Linux and C programming and designed for Sample Mine Detections in Soil using Infrared and Ultrasonic senors",
-      "Implemented and achieved basic identification attributes in bot",
+      "Built embedded-system experiments for sensor-based anomaly detection using infrared and ultrasonic data.",
+      "Analyzed environmental data from ARM microcontroller outputs to evaluate real-time terrain and obstacle patterns.",
+      "Improved detection accuracy of an early-stage humanoid robot prototype through iterative testing and data analysis."
     ],
   },
   {
     title: "Technical Research Intern",
-    company_name: "Board of Radiation and Isotope Technology",
+    company_name: "Board of Radiation & Isotope Technology",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Nov 2018 - Jan 2019",
     points: [
-      "Operated PLCs operations in radioisotope and radiation technology for healthcare, research, and agriculture.",
-      "Calibrated the PLCs for maximum efficiency for exposing onions to isotopic radiation for increasing shelf life.",
-      "Collaborating with cross-functional teams including Scientists and Technicians to create high-quality products.",
+      "Performed data collection and calibration for radiation exposure experiments in the agriculture domain.",
+      "Optimized PLC parameters through statistical analysis to increase efficiency of food irradiation processes.",
+      "Collaborated with scientists to convert raw experimental data into clear reports and operational insights."
     ],
   },
 ];
@@ -187,15 +331,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Visionary leader who combines their creative prowess with a tech-savvy mindset, all while displaying a remarkable aptitude for rapid learning.",
+      "Abhishek combines analytical thinking with creativity, consistently uncovering insights that improve outcomes. His ability to learn rapidly makes him an invaluable contributor.",
     name: "Dr. Nadir Charnia",
     designation: "Professor",
-    company: "Mumbai Univeristy",
+    company: "Mumbai University",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "Invaluable team player,  brilliant mind and vocal about unique problem-solving ideas.",
+      "A reliable team member with a sharp data-driven mindset. Abhishek brings clarity to complex problems and always contributes high-quality work.",
     name: "Amrita Prasad",
     designation: "Senior Software Analyst",
     company: "Accenture",
@@ -203,9 +347,9 @@ const testimonials = [
   },
   {
     testimonial:
-      "Strategic approach to every situation, complemented by his analytical thinking, and can light up any room with their great sense of humor",
+      "His structured thinking, collaborative nature, and strong analytical skills make him stand out. Abhishek can translate data into meaningful strategies effortlessly.",
     name: "Aloke Tewary",
-    designation: "Senior SOftware Engineer",
+    designation: "Senior Software Engineer",
     company: "Here Technologies",
     image: "https://randomuser.me/api/portraits/men/6.jpg",
   },
@@ -213,69 +357,41 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Social Distancing Violations",
+    name: "COVID-19 Social Distancing Analytics",
     description:
-      "Developed a User Application for real-time identification and intervention of Social Distancing violations in Marketplaces, Hospitals, and enclosed areasolution for transportation needs.",
+      "Built a real-time analytics system that detects social distancing violations using YOLOv3, OpenCV, and SVM. Generated visual insights for crowd density, risk zones, and behavioral patterns.",
     tags: [
-      {
-        name: "SupportVectorMachine",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "OpenCV",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Yolov3",
-        color: "pink-text-gradient",
-      },
+      { name: "ComputerVision", color: "blue-text-gradient" },
+      { name: "OpenCV", color: "green-text-gradient" },
+      { name: "Python", color: "pink-text-gradient" },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Road Survellence Bot",
+    name: "Road Quality Prediction & Route Insights",
     description:
-      "Engineered a mobile application that delivers qualitative route recommendations based on the correlation between road quality and travel time.",
+      "Developed a predictive analytics model to estimate road quality and travel-time impact using K-means clustering on sensor and GPS data. Built a mobile interface to visualize safer, faster route options.",
     tags: [
-      {
-        name: "K-means ",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NoSQL",
-        color: "pink-text-gradient",
-      },
+      { name: "Clustering", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Geospatial", color: "pink-text-gradient" },
     ],
     image: jobit,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Covid-19 Chatbot",
+    name: "COVID Mental Health NLP Chatbot",
     description:
-      "Developed an intelligent COVID-Chatbot with Natural Language Processing capabilities to detect and manage stress.",
+      "Created an NLP-powered chatbot using LSTM and sentiment analysis to detect stress levels during COVID-19. Extracted linguistic patterns and emotional cues from user input to provide guided responses.",
     tags: [
-      {
-        name: "NLP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "LSTM",
-        color: "green-text-gradient",
-      },
-      {
-        name: "neuralnetworks",
-        color: "pink-text-gradient",
-      },
+      { name: "NLP", color: "blue-text-gradient" },
+      { name: "LSTM", color: "green-text-gradient" },
+      { name: "DeepLearning", color: "pink-text-gradient" },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
   },
-  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

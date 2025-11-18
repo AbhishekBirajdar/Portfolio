@@ -1,26 +1,28 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={` relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#0000000]' />
-          <div className='w-1 sm:h-80 h-40 black-gradient' />
+    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      
+      <div className="absolute inset-0 top-24 max-w-6xl mx-auto px-6 flex flex-row items-start gap-6">
+        
+        {/* Left Vertical Line */}
+        <div className="flex flex-col justify-center items-center mt-2">
+          <div className="w-3 h-3 rounded-full bg-black" />
+          <div className="w-1 h-28 bg-gradient-to-b from-black to-gray-500" />
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-[#0000000]`}><span className='text-[#0000000]'>
-            Namaste!! </span><span className='text-[#0000000]'>Abhishek here!</span>
+        {/* Text Content */}
+        <div className="flex flex-col">
+          <h1 className="text-[42px] sm:text-[50px] lg:text-[56px] font-black leading-tight text-black">
+            Hi, I’m <span className="text-black">Abhishek Birajdar</span>
           </h1>
-          <p className={`${styles.heroSubText}  text-[#0000000]`}><span className='text-[#0000000]'>
-            I am a Masters Student at CSU Chico in Computer Science</span> <br className='sm:block hidden' /><span className='text-[#0000000]'>
-            Machine Learning & Website Development is my passion.</span>
+
+          <p className="mt-4 text-[18px] sm:text-[20px] text-gray-700 leading-relaxed">
+            Passionate Data Analyst with 3+ years of experience<br />
+            Google Certified Professional Data Analyst
           </p>
         </div>
       </div>
@@ -29,17 +31,17 @@ const Hero = () => {
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <div className='w-[28px] h-[50px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 20, 0],
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className='w-2 h-2 rounded-full bg-secondary mb-1'
             />
           </div>
         </a>
