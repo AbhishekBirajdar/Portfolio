@@ -47,14 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a passionate explorer at the nexus of machine learning and artificial intelligence. 
-        My journey into this captivating fusion of technology and creativity began with curiosity and has now blossomed into 
-        a profound connection. I've dedicated countless hours to mastering the intricacies of AI and ML, driven by an unquenchable 
-        thirst for knowledge. This relentless pursuit has led to both groundbreaking  research and a  deep understanding  of how 
-        these technologies can reshape our world. But my passion extends beyond algorithms and data. I possess a unique ability to 
-        infuse artistry into AI, creating aesthetically engaging applications that push the boundaries of possibility. I'm not just 
-        an enthusiast; I'm a visionary artist shaping the future of technology and the arts simultaneously. Join me on this exhilarating 
-        journey where creativity converges with technology, and together, we'll explore the limitless potential of AI and ML.
+        I’m a data analyst who turns complex datasets into clear, actionable insights. 
+        With experience across data cleaning, analysis, visualization, and predictive modeling, I help teams make confident, data-driven decisions. 
+        I enjoy finding patterns, simplifying ambiguity, and transforming raw data into meaningful stories. 
+        My work blends technical skill with strategic thinking, ensuring every model, dashboard, or analysis drives real business value. 
+        I’m continuously learning and excited about how data can shape smarter decisions.
+        
+        
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
